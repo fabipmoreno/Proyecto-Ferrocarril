@@ -1,0 +1,112 @@
+body {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+    position: relative; /* Establecemos posición relativa para que el footer funcione */
+    margin-top: 10%;
+}
+
+footer {
+    background-color: #D6BF93;
+    height: 150px;
+    padding: 10px;
+    display: none; /* Ocultamos el footer por defecto */
+    position: absolute; /* Posicionamos el footer de forma absoluta */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 125px ;
+    margin-top: 120px;
+}
+
+.containerFormulario {
+    margin-bottom: 1%; /* Ajustamos el margen inferior para dejar espacio para el footer */
+}
+
+/* Mostramos el footer solo cuando el cuerpo tenga suficiente contenido */
+body:after {
+    content: ''; /* Agregamos contenido pseudo-elemento */
+    display: block;
+    height: 120px; /* Establecemos la altura del footer */
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.contacto,
+.enlaces,
+.redes-sociales,
+.inicioAdministrador {
+    flex: 1;
+    text-align: center;
+}
+
+.contacto h3,
+.enlaces h3,
+.redes-sociales h3,
+.inicioAdministrador h3 {
+    margin-bottom: 10px;
+}
+
+.contacto p,
+.enlaces a {
+    margin-bottom: 5px;
+}
+
+.redes-sociales-enlace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.redes-sociales-enlace img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.redes-sociales-enlace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.redes-sociales-enlace img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries para hacer el footer responsive en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    footer {
+        height: auto; 
+        padding: 20px; 
+        flex-direction: column; 
+        align-items: center; 
+       
+    }
+
+    .containerFormulario {
+        margin-bottom: 70%; /*margen inferior en pantalla */
+    }
+  .Carousel{
+    
+        margin-bottom: 100%; /*margen inferior en pantalla */
+    }
+  
+}

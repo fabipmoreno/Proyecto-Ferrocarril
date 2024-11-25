@@ -1,0 +1,181 @@
+/* Estilos generales */
+body {
+    background-color: #F2EFCE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-description {
+    text-align: center;
+    
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.subtitulo {
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+
+.info {
+    margin-top: 40%;
+    margin-bottom: -34px;
+}
+
+.image {
+    border-radius: 10px; /* Ajusta el valor según el grado de redondez que desees */
+}
+
+.page-header {
+    margin-left: 10%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.main-image {
+    width: 75%;
+    margin-left: 20%;
+    border-radius: 10px; /* Ajusta el valor según el grado de redondez que desees */
+}
+
+.row {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos para resaltar la imagen al pasar el ratón por encima */
+.main-description img:hover,
+.columna-cuarto img:hover,
+.columna-mitad img:hover,
+.imagen-coleccion img:hover {
+    transform: scale(1.1); /* Ajusta el valor según el nivel de zoom deseado */
+    transition: transform 0.3s ease; /* Agrega una transición suave para el efecto */
+}
+/* Estilos para resaltar la imagen al pasar el ratón por encima */
+.image:hover {
+    transform: scale(1.1); /* Ajusta el valor según el nivel de zoom deseado */
+    transition: transform 0.3s ease; /* Agrega una transición suave para el efecto */
+}
+
+/* Estilos específicos para las secciones inferiores */
+.col-md-6 .row {
+    margin-bottom: 0;
+    margin-left: 20%;
+}
+
+.col-md-6 .row .col-xs-6 {
+    width: 33.33%;
+    float: left;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+.col-md-6 .row .col-xs-6 img {
+    width: 60%;
+    height: auto;
+}
+
+.col-md-6 .row .col-xs-4 {
+    width: 25%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.col-md-6 .row .col-xs-4 img {
+    width: 50%;
+    height: auto;
+}
+footer {
+    font-family: Arial, sans-serif; /* Define el tipo de fuente solo para el footer */
+    font-size: 18px; /* Tamaño de la fuente para el footer */
+    color: #000000; /* Color del texto del footer */
+    padding: 20px;
+    
+}
+
+@media only screen and (max-width: 767px) {
+     /* Agrega un margen superior al footer para separarlo del contenido */
+    
+    .page-header {
+        margin-top: 10%;
+    }
+
+    /* Cambios en el diseño para dispositivos móviles */
+    .main-description {
+        text-align: left;
+        margin-top: 3%;
+    }
+
+    .subtitulo {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    .info {
+        margin-top: 5%;
+    }
+
+    .main-image {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+
+    .col-md-6 .row {
+        margin-left: 0;
+    }
+
+    /* Cambios para las imágenes en pantallas pequeñas */
+    .col-md-6 .row .col-xs-6 {
+        width: 50%; /* Las imágenes se organizan en 2 columnas */
+        float: left;
+        padding: 1px;
+        box-sizing: border-box;
+    }
+
+    .col-md-6 .row .col-xs-4 {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .more-info {
+        margin-top: 20px;
+    }
+
+    .more-info a {
+        display: block;
+        margin-bottom: 10px;
+    }
+.image{
+    margin-bottom: 80%;
+    
+       
+
+}
+    
+}

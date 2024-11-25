@@ -1,0 +1,148 @@
+/*
+BEIGE: #D6BF93;
+MARRON: #532728
+GRIS: #CED0BA
+FONDO: #F2EFCE
+
+*/
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    z-index: 10;
+    background-color: #D6BF93;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.navLink {
+    color: #532728;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.imagenLogo {
+    width: 100px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: -30px;
+}
+
+.imagenLogo:hover{
+    transform: scale(1.1);
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.navMenuItem {
+    font-size: 18px;
+    margin: 0px 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+
+.navMenuLink {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.navMenuItem:hover {
+    transform: scale(1.1);
+}
+
+.toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0px 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+
+    body {
+        padding-top: 70px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .logo{
+        font-size: 25px;
+        line-height: 60px;
+        padding: 0px 20px
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #D6BF93;
+        position: fixed;
+        left: 0;
+        top: 60px; 
+        width: 100%;
+        padding: 20px 0px; 
+        height: calc(100% -60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .navMenuItem{
+        line-height: 70px;
+    }
+
+    .navMenuLink:hover{
+        transform: scale(1.1);
+        background: none;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .navMenuVisible{
+        left: 0;
+    }
+
+    .imagenLogo {
+        width: 80px;
+        height: 45px;
+        margin-top: 10px;
+        margin-left: -300px;
+    }
+
+    .imgMenu{
+        width: 40px;
+        height: 40px;
+        margin-top: 12px;
+    }
+
+}

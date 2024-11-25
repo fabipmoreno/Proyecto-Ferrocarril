@@ -1,0 +1,56 @@
+body {
+    background-color: #F2EFCE;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.contenido {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    background-color: #D6BF93;
+    border-radius: 5%;
+    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+#mapa {
+    height: auto;
+    margin-left: auto; 
+    margin-right: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: auto;
+}
+
+
+footer {
+    font-family: Arial, sans-serif; /* Define el tipo de fuente solo para el footer */
+    font-size: 18px; /* Tamaño de la fuente para el footer */
+    color: #000000; /* Color del texto del footer */
+    padding: 20px;
+    margin-top: 15px; /* Separar el footer del contenido */
+}
+
+h1 {
+    color: #333333;
+}
+
+h2 {
+    color:#5c593c;
+}
+
+p {
+    line-height: 1.6;
+}

@@ -1,0 +1,149 @@
+/* Estilos generales para pantallas grandes */
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2EFCE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    font-family: Arial, sans-serif; /* Define el tipo de fuente solo para el footer */
+    font-size: 18px; /* Tamaño de la fuente para el footer */
+    color: #000000; /* Color del texto del footer */
+    padding: 20px;
+    margin-top: 15px; /* Separar el footer del contenido */
+}
+.containerFormulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+   
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.img{
+    margin-left: 100%;
+}
+
+.imagenContainer {
+    width: 35%;
+}
+
+.imagenContainer img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.imagenContainer h2 {
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.imagenContainer p {
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.formularioContainer {
+    width: 50%;
+    background-color: #f1deab;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+.formularioContainer h1 {
+    text-align: center;
+    margin-bottom: 9%;
+}
+
+.formularioContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formularioContainer input,
+.formularioContainer textarea {
+    width: calc(100% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.formularioContainer textarea {
+    height: 100px;
+}
+
+.botonEnviar {
+    padding: 10px 10px;
+    color: #F2EFCE;
+    cursor: pointer; 
+    background-color: #532728;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Diphylleia', serif;
+    margin-top: 2%;
+}
+
+.form-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px; /* Espacio entre checkbox y texto */
+    margin-top: 1%;
+  }
+  .form-checkbox input[type="checkbox"] {
+    display: inline-block;
+    width: auto; /* Ajusta el ancho automáticamente */
+    margin-right: 5px; /* Espacio entre checkbox y texto */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+  }
+  
+  .form-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+/* Media query para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    /* Anulamos los estilos específicos para pantallas grandes */
+    .containerFormulario {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 7% auto;
+        max-width: none;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 1%;
+    }
+
+    .imagenContainer {
+        width: 100%;
+        text-align: center;
+        margin-top: 7%;
+    }
+
+    .imagenContainer img {
+        max-width: 100%;
+        
+    }
+
+    .formularioContainer {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .botonEnviar {
+        margin-right: 0; 
+    }
+    
+}

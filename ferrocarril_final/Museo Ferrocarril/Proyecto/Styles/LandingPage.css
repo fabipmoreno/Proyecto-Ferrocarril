@@ -1,0 +1,295 @@
+/*
+BEIGE: #D6BF93;
+MARRON: #532728
+GRIS: #CED0BA
+FONDO: #F2EFCE
+
+*/ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #F2EFCE;
+   
+}
+
+footer {
+    font-family: Arial, sans-serif; /* Define el tipo de fuente solo para el footer */
+    font-size: 18px; /* Tamaño de la fuente para el footer */
+    color: #000000; /* Color del texto del footer */
+    padding: 20px;
+    margin-top: 15px; /* Separar el footer del contenido */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+
+.hero {
+    background-image: url('../img/Foto2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #532728;
+    color: #F2EFCE;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 8%;
+    opacity: 0.7; 
+    text-transform: uppercase;
+}
+
+
+.button:hover {
+    transform: scale(1.05);
+    opacity: 1; 
+}
+
+#about {
+    padding: 60px 0;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-image {
+    margin-bottom: 40px;
+}
+
+.about-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+}
+
+h2{
+    color: #532728;
+    text-transform: uppercase;
+}
+
+
+
+.exposiciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.expoTemporal,
+.expoVirtual {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+}
+
+.imagenExpo {
+    max-width: 20%; 
+    margin: 20px 3px;
+    border-radius: 3%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagenExpo:hover {
+    transform: scale(1.05);
+}
+
+
+.inicio,
+.exposiciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.texto,
+.imagen,
+.expoTemporal,
+.expoVirtual {
+    width: 100%;
+    max-width: 615px;
+    margin: 20px;
+}
+
+.texto {
+    text-align: justify;
+}
+
+.imagenEntrada,
+.imagenExpo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.exposiciones h2 {
+    text-align: center;
+    color: #532728;
+}
+
+.expoTemporal,
+.expoVirtual {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+}
+
+.imagenExpo {
+    max-width: 40%; /* Mantenemos el tamaño máximo del 40% */
+    margin: 20px 3px;
+    border-radius: 3%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagenExpo:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 720px) {
+    .inicio .texto {
+        width: 100%;
+    }
+}
+
+
+
+
+
+.Carousel{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.Carousel h2{
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 24px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+}
+.slick h4 small{
+    font-size: 15px;
+    display: block;
+}
+.slick a img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
+}
+.slick a img:hover{
+    opacity: .85;
+}
+
+/* buttons */
+
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+}
+.slick-prev{
+    left: 0px;
+}
+.slick-next{
+    right: 0px;
+}
+
+
+
+

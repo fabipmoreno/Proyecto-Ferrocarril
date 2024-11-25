@@ -1,0 +1,136 @@
+/* Colores */
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2EFCE;
+    font-family: 'Diphylleia', serif;
+    min-height: 100vh; /* Establece el alto mínimo del cuerpo para ocupar toda la altura del viewport */
+
+}
+
+.containerPrecios,
+.containerFormulario {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+   
+}
+
+.tablaPrecios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+
+
+.tablaPrecios th,
+.tablaPrecios td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.containerFormulario h3 {
+    margin-left: 10%;
+}
+
+.containerFormulario form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.inputForm {
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: 4%;
+    border: none;
+    height: auto;
+}
+
+.inputForm {
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #532728;
+    padding: 7px;
+    width: 48%;
+    font-size: 14px;
+}
+
+.containerFormulario label {
+    width: 48%;
+}
+
+.botonInput {
+    padding: 10px 10px;
+    color: #F2EFCE;
+    cursor: pointer;
+    background-color: #532728;
+    border: none;
+    border-radius: 5px;
+    justify-content: left;
+    margin-right: 100%;
+    font-family: 'Diphylleia', serif;
+    margin-top: 2%;
+}
+
+.botonInput:hover {
+    transform: scale(1.1);
+}
+
+.precioTotal {
+    margin-top: 2%;
+}
+
+footer {
+    position: fixed; /* Fija el footer en la parte inferior de la ventana del navegador */
+    bottom: 0; /* Lo ancla en la parte inferior */
+    width: 100%; /* Hace que el footer ocupe todo el ancho de la ventana */
+    
+        font-family: Arial, sans-serif; /* Define el tipo de fuente solo para el footer */
+        font-size: 18px; /* Tamaño de la fuente para el footer */
+        color: #000000; /* Color del texto del footer */
+        padding: 20px;
+        margin-top: 15px; /* Separar el footer del contenido */
+    
+
+}
+
+@media (max-width: 1000px) {
+    body {
+        flex-direction: column;
+    }
+
+    .containerPrecios,
+    .containerFormulario {
+        width: 100%;
+    }
+
+    .botonInput {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .containerFormulario input,
+    .containerFormulario label {
+        width: 100%; /* Ajusta el ancho al 100% en dispositivos móviles */
+        max-width: 100%;
+    }
+
+    .containerFormulario h3 {
+        margin-left: 0%;
+    }
+
+    .containerFormulario form {
+        margin-left: 0%;
+    }
+
+    .tablaPrecios {
+        margin-left: 0%;
+    }
+}
